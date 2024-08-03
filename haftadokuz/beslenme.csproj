@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{77632938-FE61-4FAE-B5D3-A0A5B974A662}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>haftadokuz</RootNamespace>
+    <AssemblyName>haftadokuz</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.8.0.0\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.6, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.6\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAnaliz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnaliz.Designer.cs">
+      <DependentUpon>FrmAnaliz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOgunsorulari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOgunsorulari.Designer.cs">
+      <DependentUpon>FrmOgunsorulari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProfilolusturma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProfilolusturma.Designer.cs">
+      <DependentUpon>FrmProfilolusturma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTablom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTablom.Designer.cs">
+      <DependentUpon>FrmTablom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUyeKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUyeKayit.Designer.cs">
+      <DependentUpon>frmUyeKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmgirisyap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmgirisyap.Designer.cs">
+      <DependentUpon>frmgirisyap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmyiyecek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmyiyecek.Designer.cs">
+      <DependentUpon>Frmyiyecek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAnaliz.resx">
+      <DependentUpon>FrmAnaliz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgunsorulari.resx">
+      <DependentUpon>FrmOgunsorulari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProfilolusturma.resx">
+      <DependentUpon>FrmProfilolusturma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTablom.resx">
+      <DependentUpon>FrmTablom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUyeKayit.resx">
+      <DependentUpon>frmUyeKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmgirisyap.resx">
+      <DependentUpon>frmgirisyap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmyiyecek.resx">
+      <DependentUpon>Frmyiyecek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Okulapp.BLL\Okulapp.BLL.csproj">
+      <Project>{ef174df9-f8fe-4911-a36a-962485d8fabf}</Project>
+      <Name>Okulapp.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Okulapp.DAL\Okulapp.DAL.csproj">
+      <Project>{5dadc150-a8d2-460a-9336-833d98922be3}</Project>
+      <Name>Okulapp.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\okulAppModel\okulAppModel.csproj">
+      <Project>{38EF2570-A77C-4893-B200-E48563F20835}</Project>
+      <Name>okulAppModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
